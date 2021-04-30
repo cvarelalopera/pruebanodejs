@@ -1,0 +1,36 @@
+<div class="col-md-4 mx-auto">
+
+    <div class="card">
+        <div class="card-body">
+            <form action="/links/edit/{{user.documento}}" method="POST">
+                <div class="form-group">
+                    <input type="text" name="nombre" class="form-control" placeholder="Nombre" value="{{users.nombre}}" autofocus>
+                </div>
+                <div class="form-group">
+                    <input type="url" name="apellido" class="form-control" placeholder="apellido" value="{{users.apellido}}">
+                </div>
+                <div class="form-group">
+                    <input type="textarea" name="tipo documento" class="form-control" placeholder="Tipo documento" value="{{users.apellido}}">
+                </div>
+                <div class="form-group">
+                    <input type="number" name="documento" class="form-control" placeholder="numero doc" value="{{users.apellido}}">
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" class="form-control" placeholder="email" value="{{users.email}}">
+                </div>
+                <div class="form-group">
+                         <label for="formFile" class="form-label">Fecha de Nacimiento</label>
+                            <input class="form-control" name="fecha" type="datetime-local" value={{users.fecha}} >
+  </div>
+                 <div class="form-group">
+                    <input type="file" name="file" class="form-control" placeholder="file" value="{{users.file}}">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-success btn-block">
+                        Save
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
